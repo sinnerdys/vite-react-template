@@ -20,7 +20,7 @@ type GenerateResponse = {
 	error?: string;
 };
 
-const API_ENDPOINT = "/api/generate";
+const API_ENDPOINT = (import.meta.env.VITE_API_URL as string | undefined)?.trim() || "https://morning-flower-805c.ev-kurt.workers.dev/";
 
 const PROMPT_PRESETS = [
 	"Сделай промпт для ChatGPT: маркетинговая стратегия запуска нового мобильного приложения",
@@ -298,3 +298,5 @@ function App() {
 }
 
 export default App;
+
+
