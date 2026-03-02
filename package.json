@@ -39,7 +39,7 @@
                     "build":  "tsc -p tsconfig.app.json \u0026\u0026 vite build",
                     "cf-typegen":  "wrangler types",
                     "check":  "tsc -p tsconfig.app.json \u0026\u0026 vite build",
-                    "deploy":  "wrangler deploy",
+                    "deploy":  "echo \"Pages deploy is managed by Cloudflare build pipeline\"",
                     "dev":  "vite",
                     "lint":  "eslint .",
                     "preview":  "npm run build \u0026\u0026 vite preview",
